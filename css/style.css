@@ -75,6 +75,7 @@ img {
 
 .quarter-width {
   grid-column: span 1;
+  height: 100%;
 }
 
 .half-width {
@@ -84,10 +85,12 @@ img {
 
 .three-quarter-width {
   grid-column: span 3;
+  height: 100%;
 }
 
 .full-width {
   grid-column: span 4;
+  height: 100%;
 }
 
 /* .half-heigth {
@@ -115,7 +118,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
-  position: fixed;
+  position: initial;
   background-color: #fff;
   z-index: 1;
   flex-wrap: wrap;
@@ -170,9 +173,8 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: .5em;
-  position: relative;
-  top: 2.9em;
   padding: 0 .5em;
+  margin-bottom: .5em;
 }
 
 .img-container {
@@ -212,10 +214,11 @@ header h1 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 
 .form-container {
-  width: 45%;
+  max-width: 45%;
   background-color: #fff;
   padding: 1em;
 }
@@ -223,7 +226,7 @@ header h1 {
 .message {
   max-width: 50%;
   color: #fff;
-  padding: 2em;
+  padding: 1em;
 }
 
 form div {
@@ -292,25 +295,21 @@ label {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-top: 1px solid black;
   font-size: .9rem;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
 footer div {
-  width: 30%;
-  height: 10em;
   margin: .5em;
   display: flex;
   flex-direction: column;
-  padding: 1em;
 }
 
 footer h2 {
   margin-bottom: 1em;
+  color: var(--darkGreen);
 }
 
 footer a,
@@ -320,10 +319,101 @@ footer a:visited {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 380px) {
+  .content {
+    position: relative;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 529px) {
+  nav {
+    padding-bottom: .5em;
+  }
+  
+  footer {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: .5em;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .form-container,
+  .message
+  {
+    max-width: 100%;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  #tomatoes-portrait {
+    display: none;
+  }
+
+  .three-quarter-width {
+    grid-column: span 2;
+  }
+
+}
+
+@media (min-width: 768px) {
+  footer {
+    justify-content: flex-start;
+  }
+
+  footer div {
+    margin: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    max-width: 100%;
+  }
+
+  #tomatoes-portrait {
+    display: none;
+  }
+
+  #article-form {
+    grid-column: span 4;
+  }
+  #article-tomato {
+    grid-column: span 2;
+  }
+
+}
+
 @media (min-width: 1024px) {
   .grid {
-    width: 50%;
+    width: 80%;
     margin: auto;
+    margin-bottom: 1em;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    width: 60%
   }
 }
 

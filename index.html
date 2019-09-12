@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/4c1a6ee25d.js"></script>
     <title>Grönsaker</title>
   </head>
   <body>
@@ -29,11 +30,11 @@
     </nav>
     <main>
       <section>
+        <header class="full-width">
+          <h1><span>Grön</span>saker</h1>
+          <h2>-Sedan 1852</h2>
+        </header>
         <div class="grid">
-          <header class="full-width">
-            <h1><span>Grön</span>saker</h1>
-            <h2>-Sedan 1852</h2>
-          </header>
           <article class="half-width">
             <div class="img-container">
               <img src="/img/vegetables16-9.jpeg" alt="Grönsaker" />
@@ -63,7 +64,7 @@
               </div>
             </div>
           </article>
-          <article class="three-quarter-width">
+          <article class="three-quarter-width" id="article-form">
             <div class="container">
               <div class="message">
                 <h1>Registrera<span>.</span></h1>
@@ -117,14 +118,23 @@
               </div>
             </div>
           </article>
-          <article class="quarter-width">
+          <article class="quarter-width" id="article-tomato">
             <div class="img-container">
-              <img src="img/tomato.jpg" alt="Tomater" />
+              <img src="img/tomato.jpg" alt="Tomater" id="tomatoes-portrait" />
+              <img
+                src="img/tomatoes16-9.jpeg"
+                alt="Tomater"
+                id="tomatoes-landscape"
+              />
               <div class="transparent-overlay"></div>
               <div class="content">
                 <h1>Erbjudande<span>.</span></h1>
                 <h2>Extrapris Tomater!</h2>
-                <p>Just nu <span class="bold">9.90kr/kg!</span></p>
+                <p>
+                  Just nu superfina tomater för bara
+                  <span class="bold">9.90kr/kg! </span>
+                  Passa på!
+                </p>
                 <button class="button">Köp</button>
               </div>
             </div>
@@ -136,11 +146,13 @@
       <div>
         <h2>Kontakt</h2>
         <ul>
-          <li>Adressgatan 3</li>
+          <li><i class="fas fa-map-pin"></i> &nbsp;&nbsp;Adressgatan 3</li>
           <li>
-            <a href="mailto:info@gronsaker.se">info@gronsaker.se</a>
+            <a href="mailto:info@gronsaker.se"
+              ><i class="far fa-envelope"></i> info@gronsaker.se</a
+            >
           </li>
-          <li>+46 123 456</li>
+          <li><i class="fas fa-phone"></i> +46 123 456</li>
         </ul>
       </div>
       <div>
@@ -151,9 +163,15 @@
       <div>
         <h2>Social</h2>
         <ul>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">instagram</a></li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter-square"></i> twitter</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+          </li>
         </ul>
       </div>
     </footer>
