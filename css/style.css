@@ -134,6 +134,11 @@ nav a {
   color: var(--text);
 }
 
+nav a.button {
+  font-size: .8em;
+  display: inline-block;
+}
+
 nav a:hover {
   color: var(--green);
 }
