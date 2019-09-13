@@ -330,10 +330,7 @@ footer a:visited {
 /* MEDIA QUERIES */
 
 @media (max-width: 380px) {
-  .content {
-    position: relative;
-  }
-
+  
   nav ul {
     display: flex;
     flex-direction: row;
@@ -359,6 +356,59 @@ footer a:visited {
   footer {
     flex-direction: column;
   }
+
+  #tomatoes-portrait {
+    display: block;
+  }
+
+  #tomatoes-landscape {
+    display: none;
+  }
+
+  #chef-portrait {
+    display: block;
+  }
+
+  #chef-landscape {
+    display: none;
+  }
+
+  #vegetables-portrait {
+    display: block;
+  }
+
+  #vegetables-landscape {
+    display: none;
+  }
+
+}
+
+@media (min-width: 460px) {
+  
+  #tomatoes-portrait {
+    display: none;
+  }
+
+  #tomatoes-landscape {
+    display: block;
+  }
+
+  #chef-portrait {
+    display: none;
+  }
+
+  #chef-landscape {
+    display: block;
+  }
+
+  #vegetables-portrait {
+    display: none;
+  }
+
+  #vegetables-landscape {
+    display: block;
+  }
+
 }
 
 @media (max-width: 529px) {
@@ -399,10 +449,6 @@ footer a:visited {
     max-width: 100%;
   }
 
-  #tomatoes-portrait {
-    display: none;
-  }
-
   .three-quarter-width {
     grid-column: span 2;
   }
@@ -413,10 +459,6 @@ footer a:visited {
 @media (min-width: 768px) and (max-width: 1024px) {
   .content {
     max-width: 100%;
-  }
-
-  #tomatoes-portrait {
-    display: none;
   }
 
   #article-form {
