@@ -449,14 +449,14 @@ footer a:visited {
     max-width: 100%;
   }
 
-  .three-quarter-width {
+  #article-tomato {
     grid-column: span 2;
   }
 
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .content {
     max-width: 100%;
   }
@@ -480,13 +480,21 @@ footer a:visited {
   .content {
     max-width: 100%;
   }
+
+  #tomatoes-portrait {
+    display: block;
+  }
+
+  #tomatoes-landscape {
+    display: none;
+  }
+
+  #article-tomato {
+    background-color: var(--semiTransparent);
+  }
+
 }
 
-@media (min-width: 1200px) {
-  .grid {
-    width: 60%
-  }
-}
 
 
 
