@@ -300,16 +300,21 @@ label {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   border-top: 1px solid black;
   font-size: .9rem;
+  font-weight: bold;
   width: 100%;
 }
 
 footer div {
-  margin: .5em;
+  margin: 2em;
   display: flex;
   flex-direction: column;
+}
+
+footer div i {
+  margin-right: .5em;
 }
 
 footer h2 {
@@ -329,6 +334,28 @@ footer a:visited {
     position: relative;
   }
 
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #register div:first-child div:first-child {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  #register div:first-child div:last-child {
+    margin-left: 0;
+  }
+
+  #register div:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 459px) {
   footer {
     flex-direction: column;
   }
@@ -341,6 +368,12 @@ footer a:visited {
   
   footer {
     font-size: .8rem;
+  }
+}
+
+@media (max-width: 647px) {
+  nav {
+    padding: .3em;
   }
 }
 
@@ -376,15 +409,6 @@ footer a:visited {
 
 }
 
-@media (min-width: 768px) {
-  footer {
-    justify-content: flex-start;
-  }
-
-  footer div {
-    margin: 2em;
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .content {
