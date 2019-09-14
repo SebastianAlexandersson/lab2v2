@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap"
       rel="stylesheet"
@@ -18,28 +19,69 @@
         ><h1><span>Grön</span>saker</h1></a
       >
       <ul>
-        <li><a href="/pages/products.html">Produkter</a></li>
-        <li><a href="/pages/about.html">Om</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="about.html">Om</a></li>
         <li><a href="#">Recept</a></li>
         <li><a href="#">Community</a></li>
       </ul>
       <div>
-        <a href="/pages/cart.html" class="button">Kundvagn</a>
-        <a href="/pages/login.html" class="button">Logga in</a>
+        <a href="cart.html" class="button">Kundvagn</a>
+        <a href="login.html" class="button">Logga in</a>
       </div>
     </nav>
-    <header class="full-width">
+    <header>
       <h1><span>Grön</span>saker</h1>
       <h2>-Sedan 1852</h2>
     </header>
     <main>
-      <section></section>
+      <section class="container-full">
+        <h2>Kundvagn</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Produkt</th>
+              <th>Pris/kg</th>
+              <th>Vikt</th>
+              <th>Pris</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tomater</td>
+              <td>9.90 kr/kg</td>
+              <td>1kg</td>
+              <td>9.90 kr</td>
+            </tr>
+            <tr>
+              <td>Potatis</td>
+              <td>5 kr/kg</td>
+              <td>1kg</td>
+              <td>5 kr</td>
+            </tr>
+            <tr>
+              <td>Broccoli</td>
+              <td>29.90 kr/kg</td>
+              <td>1kg</td>
+              <td>29.90 kr</td>
+            </tr>
+            <tr class="bold">
+              <td>Totalt</td>
+              <td></td>
+              <td></td>
+              <td>44.80 kr</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="button">
+          Till Kassan
+        </button>
+      </section>
     </main>
-    <footer class="full-width">
+    <footer>
       <div>
         <h2>Kontakt</h2>
         <ul>
-          <li><i class="fas fa-map-pin"></i> &nbsp;&nbsp;Adressgatan 3</li>
+          <li><i class="fas fa-location-arrow"></i> Adressgatan 3</li>
           <li>
             <a href="mailto:info@gronsaker.se"
               ><i class="far fa-envelope"></i> info@gronsaker.se</a

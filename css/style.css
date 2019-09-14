@@ -93,14 +93,6 @@ img {
   height: 100%;
 }
 
-/* .half-heigth {
-  grid-row: span 1;
-}
-
-.full-height {
-  grid-row: span 2;
-} */
-
 .card {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -291,7 +283,7 @@ label {
   bottom: 0;
   font-size: .9em;
   color: rgba(0, 0, 0, 0.5);
-  transform: translate(10%, -50%);
+  transform: translate(10%, -60%);
   transition: all 0.3s ease;
   cursor: text;
 }
@@ -353,9 +345,6 @@ footer a:visited {
 }
 
 @media (max-width: 459px) {
-  footer {
-    flex-direction: column;
-  }
 
   #tomatoes-portrait {
     display: block;
@@ -411,7 +400,13 @@ footer a:visited {
 
 }
 
-@media (max-width: 529px) {
+@media (max-width: 491px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 553px) {
   nav {
     padding-bottom: .5em;
   }

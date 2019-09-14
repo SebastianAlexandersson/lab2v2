@@ -1,0 +1,82 @@
+.container-full {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: .5em;
+}
+
+.container-full h2 {
+  margin: 1em 0;
+  text-align: center;
+  color: #fff;
+  background-color: var(--green);
+  padding: .5em;
+}
+
+.login-form {
+  width: 100%;
+  position: relative;
+}
+
+#login input {
+  margin: 0;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+#login label[for="user-name"] {
+  transform: translate(20%, -60%);
+}
+
+#login input[id="user-name"]:focus ~ label,
+#login input[id="user-name"]:valid ~ label {
+  transform: translate(20%, -180%);
+}
+
+#login input[id="login-password"]:focus ~ label,
+#login input[id="login-password"]:valid ~ label {
+  transform: translate(10%, -180%);
+}
+
+@media (min-width: 425px) and (max-width: 499px) {
+  .login-form {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .login-form {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container-full {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .login-form {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-form {
+    width: 30%;
+    margin: auto;
+  }
+} 
+
+@media (min-width: 1200px) {
+  .container-full {
+    width: 60%;
+    margin: auto;
+  }
+}
