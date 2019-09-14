@@ -139,12 +139,16 @@ nav a:hover {
   color: var(--green);
 }
 
-nav h1 {
-  margin: 0;
+nav .logga {
+  font-size: 1.3em;
   font-family: var(--fontTwo);
 }
 
-nav h1 span {
+nav .logga:hover {
+  color: var(--green);
+}
+
+nav .logga::first-letter {
   color: var(--green);
 }
 
@@ -164,6 +168,10 @@ header h1 span {
 
 header h1 {
   font-size: 3em;
+}
+
+header h1::first-letter {
+  color: var(--green);
 }
 
 
