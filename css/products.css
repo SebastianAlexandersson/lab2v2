@@ -9,11 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--darkGreen);
+  background-color: var(--green);
 }
 
 .product-grid div:first-child h1 {
   color: #fff;
+  padding: 1em;
 }
 
 .product-info {

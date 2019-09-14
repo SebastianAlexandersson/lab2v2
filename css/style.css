@@ -131,6 +131,10 @@ nav a.button {
   display: inline-block;
 }
 
+nav a.button:hover {
+  color: #fff;
+}
+
 nav a:hover {
   color: var(--green);
 }
